@@ -35,7 +35,7 @@ $(function() {
     $('#form_reg').on('submit', function(e) {
         e.preventDefault()
         $.ajax({
-            method: "POSt",
+            method: "POST",
             url: "/api/reguser",
             data: {
                 username: $('.reg [name=username]').val(),

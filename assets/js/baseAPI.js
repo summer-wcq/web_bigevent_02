@@ -16,7 +16,7 @@ $.ajaxPrefilter(function(options) {
     }
 
     // 3.登录拦截（不登录，不允许访问其他页面）
-    options.complete = function(res) {
+    options.complete = function(res) { //complete每次完成都会触发这个函数
         console.log(res.responseJSON);
         var obj = res.responseJSON;
         if (obj.status == 1 && obj.message == '身份认证失败！') {

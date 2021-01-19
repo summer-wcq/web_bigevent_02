@@ -21,6 +21,7 @@ function getUserInfo() {
     $.ajax({
         // 请求方式为get，不写默认为get
         url: "/my/userinfo",
+        // headers属性，用户设置请求头信息
         // headers: {
         //     // 重新登录，因为token过期事件12小时
         //     Authorization: localStorage.getItem('token') || ""
